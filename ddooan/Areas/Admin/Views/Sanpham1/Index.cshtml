@@ -1,0 +1,72 @@
+﻿@model IEnumerable<ddooan.Models.SanPham>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/layuotAdmin.cshtml";
+}
+
+
+
+<form action="/admin/sanpham1/index" method="post">
+
+    <a href="/admin/sanpham1/create" class="btn btn-primary">Thêm mới</a>
+</form>
+<table  id="example1" class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <td>
+                Mã SP
+            </td>
+            <td>
+                Tên Sản Phẩm
+            </td>
+
+            <td>
+                Đơn Giá
+            </td>
+            <td>
+                Mô tả
+            </td>
+            <td style="max-width:7%;">
+                Hình Ảnh
+            </td>
+
+
+            <td>
+                Sửa
+            </td>
+            <td>Xóa</td>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @item.MaSP
+            </td>
+
+
+            <td>
+                @item.TenSP
+            </td>
+
+            <td>
+                @item.DonGia
+            </td>
+
+            <td>
+                @item.MoTa
+            </td>
+           
+            <td>
+                <img src="/Content/HinhAnhSP/@item.HinhAnh" class="profile-user-img img-responsive" />
+            </td>
+            <td><a class="btn btn-primary"  href="@Url.Action("moi","Sanpham1")/@item.MaSP">Edit</a></td>
+            <td><a class="btn btn-primary" onclick="return confirm('Bạn có muốn xóa không?');" href="@Url.Action("delete","Sanpham1")/@item.MaSP">Xóa</a></td>
+        
+        </tr>
+        }
+
+</table>

@@ -1,0 +1,342 @@
+* {
+    box-sizing: border-box
+  }
+  
+  
+  /* Slideshow container */
+  
+  .slideshow-container {
+    max-width: 50%;
+    position: relative;
+    margin: left;
+    margin-left: 5%;
+    float: left;
+  }
+  
+  /* Ẩn các slider */
+  
+  .mySlides {
+    display: none;
+  }
+  
+  /* định dạng các chấm chuyển đổi các slide */
+  
+  .dot {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* khi được hover, active đổi màu nền */
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Thêm hiệu ứng khi chuyển đổi các slide */
+  
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {
+      opacity: .4
+    }
+    to {
+      opacity: 1
+    }
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: .4
+    }
+    to {
+      opacity: 1
+    }
+  }
+  
+  /* item in your cart */
+  
+  main {
+    /* padding: 100px 0; */
+    width: 78.3%;
+    height: 500px;
+    margin: 0 auto 25px;
+    border: 1px solid rgba(245, 228, 220, 0.651);
+    border-radius: 5px;
+    margin-top: 61px;
+  }
+  
+  
+  h1 {
+    float: left;
+    margin: 0;
+  }
+  
+  #shoppingCart h2 {
+    margin: 0 0 50px;
+  }
+  
+  #cart-container {
+    position: relative;
+  }
+  
+  #itemCount {
+    position: absolute;
+    display: none;
+    top: -8.5px;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: red;
+    color: white;
+    text-align: center;
+  }
+  
+  #cartItemsContainer .itemImage img {
+    width: 100%;
+  }
+  
+  .item {
+    position: relative;
+    width: 21%;
+    height: 435px;
+    float: left;
+    margin: 2%;
+    overflow: hidden;
+    background-color: #fff;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transition:  0.3s;
+  }
+  
+  .itemText p {
+    margin-bottom: 20px;
+    color: red;
+  }
+  
+  .price-container {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  i:hover {
+    cursor: pointer;
+  }
+  
+  #shoppingCart {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: absolute;
+    z-index: 99999;
+    transition: 0.1s ease-in-out;
+  }
+  
+  #cartItemsContainer {
+    position: relative;
+    width: 630px;
+    max-height: 450px;
+    left: 50%;
+    top: 150px;
+    margin-left: -300px;
+    padding: 40px;
+    box-shadow: 0 0 10px black;
+    background: #e9e9e9;
+    overflow: auto;
+  }
+  
+  #cartItemsContainer i {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  #cartItemsContainer .itemDetails {
+    overflow: auto;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  
+  #cartItemsContainer .itemImage {
+    float: left;
+    width: 200px;
+    padding: 0 40px;
+  }
+  
+  #cartItemsContainer .itemText {
+    float: right;
+    width: 250px;
+    padding: 0 10px;
+  }
+  
+  #cartItemsContainer .itemText .price-container {
+    margin-top: 0;
+  }
+  
+  .item button {
+    margin-left: 30%;
+    height: 25px;
+    background: linear-gradient(to right, #f09faf, #aed1ee, #92a3fc);
+  }
+  
+  #emptyCart {
+    margin: 0px 0px 20px 430px;
+    width: 120px;
+    height: 30px;
+  }
+  
+  .removeItem {
+    margin-left: 350px;
+    height: 30px;
+    width: 150px;
+  }
+  
+  .item a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  #cartItemsContainer .itemText a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .itemText a p {
+    text-align: center;
+    color: black;
+  }
+  
+  #cartTotal{
+    color: red;
+    font-weight: bold;
+    font-size: 23px;
+  }
+  
+  main .item:hover{
+    box-shadow: 0 0 10px rgb(17, 17, 17);
+  }
+  
+  
+  
+  #ALLSP {
+    width: 78.3%;
+    height: 2250px;
+    margin: 0 auto 25px;
+    border: 1px solid rgba(245, 228, 220, 0.651);
+    border-radius: 5px;
+    margin-top: 75px;
+  }
+  
+  #ALLSP .item:hover{
+    box-shadow: 0 0 10px rgb(17, 17, 17);
+  }
+  
+  #ALLSP1 {
+    width: 78.3%;
+    height: 1830px;
+    margin: 0 auto 25px;
+    border: 1px solid rgba(245, 228, 220, 0.651);
+    border-radius: 5px;
+    margin-top: 75px;
+  }
+  
+  #ALLSP .item:hover{
+    box-shadow: 0 0 10px rgb(17, 17, 17);
+  }
+  
+  
+  main button {
+    margin-right: 50px;
+  }
+  
+  main button a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .than1 {
+    position: relative;
+    width: 100%;
+    margin-top: 15px;
+  }
+  
+  .xt {
+    margin-left: 92%;
+    margin-top: 435px;
+  }
+  
+  .xt a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .xt :hover {
+    color: blue;
+  }
+  
+  .page{
+    position: relative;
+    width: 100%;
+    height: 25px;
+    padding-left: 45%;
+  }
+  
+  .page>ul{
+    list-style: none;
+      height: 100%;
+  }
+  
+  .page>ul>li{
+    width: 30px;
+    display: inline-block;
+    position: relative;
+    height: 30px;
+    border: 1px solid black;
+    background-color: #fff;
+    color: black;
+    padding: 6px 6px 6px 9px;
+  }
+  
+  .page>ul :hover{
+    background-color: rgba(196, 201, 202, 0.637);
+    color: black;
+    border-radius: 50%;
+  }
+  
+  .page>ul>li>a{
+    color: black;
+    text-decoration: none;
+  }
+  
+  .tttt{
+    margin-top: 90px;
+    margin-left: 22%;
+    width: 900px;
+    height: 580px;
+    background-color: #71717163;
+    padding-left: 15% ;
+  }
+  
+  .tttt input{
+    width: 60%;
+    height: 35px;
+    margin-top: 15px;
+    border-radius: 5px;
+  }

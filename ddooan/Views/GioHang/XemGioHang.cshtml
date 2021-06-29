@@ -1,0 +1,260 @@
+﻿@using ddooan.Models;
+@model  List<ItemGioHang>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang sản phẩm</title>
+    <link rel="stylesheet" href="~/Content/css/dangky.css">
+    <link rel="stylesheet" href="~/Content/font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <title>Xem ví dụ</title>
+    <style type="text/css">
+        table, th, td {
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body style="background-color: gray;">
+    <header id="head" class="row">
+
+        <div class="col-2">
+            <a href="#" style="text-align:center">
+                <img src="~/Content/images/anhlogodecao.jpg" style="max-width: 78%;padding: 0px;height: 131px;">
+            </a>
+        </div>
+        <div class="col-6">
+            <form>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="search..." style="margin-left: -64px;width:788px;">
+                    <span>
+                        <!-- <button class="btn-primary" type="button">
+                             <span class=""><i class="fa fa-search" aria-hidden="true" style="color:blue;"></i> </span>
+                         </button>-->
+
+                    </span>
+                </div>
+            </form>
+        </div>
+        <div class="col-4 " style="margin-left:-84px;">
+            <div class="item-header">
+                <div class="shopping" style="padding-top: 53px;">
+                    <a href="#"><img src="~/Content/images/icon_01.png" style="max-width:100%"></a>
+
+                </div>
+                <a href="#" class="txt-giohang" style="text-decoration: none;;">
+                    Giỏ <br> hàng
+                    <span class="label label-danger sl-giohang">0</span>
+                </a>
+
+
+
+            </div>
+            <div class="item-header" style="padding-top: 45px;">
+                <button type="button" class="btn-default ">
+                    <a href="../html/dangnhap.html"> đăng nhập</a>
+                </button>
+            </div>
+            <div class="item-header" style="padding-top: 45px;">
+                <button type="button" class="btn-default ">
+                    <a href="../html/dangnhap.html"> Đăng Ký</a>
+                </button>
+            </div>
+        </div>
+    </header>
+    <nav id="_nav" class="row">
+        <div class="menu">
+            <ul>
+                <li> <a href="@Url.Action("Index","Home")"> Trang chủ</a></li>
+                <li><a href="@Url.Action("Index","TrangSanPham")"> Sản phẩm</a></li>
+                <li><a href="../html/trangkhuyenmai.html">Sale</a></li>
+                <li> <a href="../html/tranggioithieu.html" target="_bank"> Giới thiệu</a></li>
+                <li><a href="../html/TrangLienhe.html"> Liên Hệ</a></li>
+                <li><a href="../html/TrangDangky.html"> Tài khoản</a>
+            </ul>
+
+        </div>
+    </nav>
+    <div class="id" style="width:1509px;margin: auto; border: 1px solid black ;">
+
+    </div>
+    <main>
+        <section>
+            <div class="col-3">
+                <div class="divcontainer">
+                    <img src="~/Content/images/anhcanh.jpg" alt="anh ben canh" style="margin: -20px  0px;width: 600px;">
+
+                </div>
+
+            </div>
+
+            <div class="col-9">
+                <div class="row">
+                    <div class="col-12">
+                        <marquee behavior="" direction="" style="color: antiquewhite;height: 36px; margin-top: -10px;margin-left: 125px;background-color: gray;margin-right:auto;">
+                            <p style="padding-top:5px ;font-size: 25px;">NHỮNG ĐƠN ĐẶT HÀNG DECAO CỦA BẠN</p>
+                            /*-----làm cho dòng chữ chạy */
+                        </marquee>
+                    </div>
+                </div>
+                @if (Model == null || Model.Count <= 0)
+                {
+                    <h1 style="margin:189px 0px 0px 422px; ">Đặt Hàng Thành Công ! ! !</h1>
+                }
+                else
+                {
+                    <table>
+                        <tr>
+                            <th>MaSP</th>
+                            <th>Tên SP</th>
+                            <th> Hình Ảnh</th>
+                            <th>Số Lượng </th>
+                            <th>Đơn Giá</th>
+                            <th>Thành Tiền</th>
+                        </tr>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <th>@item.MaSP</th>
+                                <th>@item.TenSP</th>
+                                <th><img src="@Url.Content("~/Content/HinhAnhSP/"+item.HinhAnh)" width="150px" height="150px" /></th>
+                                <th>@item.SoLuong</th>
+                                <th>@item.DonGia.ToString("#,##")</th>
+                                <th>@item.ThanhTien.ToString("#,##")</th>
+                                @*<th>@Html.ActionLink("SuaGioHang","sua",new{ @MaSP= item.MaSP})</th>*@
+                                <td>@Html.ActionLink("Sửa", "SuaGioHang", new { @MaSP = item.MaSP })</td>
+                                <td>@Html.ActionLink("Xoá", "XoaGioHang", new { @MaSP = item.MaSP })</td>
+                            </tr>
+
+                        }
+
+
+                    </table>
+
+                }
+
+
+                <div class="divcontainer" style="text-align:right;background-color:gray;">
+                    @if (Model == null || Model.Count <= 0)
+                    {
+                        <h1></h1>
+                    }
+                    else
+                    {
+
+
+                        using (Html.BeginForm("DatHang", "GioHang"))
+                        {
+                            <table>
+                                <tr>
+                                    <td>
+                                        <label><b>Họ Tên</b></label>
+                                    </td>
+                                    <td>
+                                        @Html.TextBox("TenKH")
+                                        <p style="color:red;" id="TB_TenKH"></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label><b>Địa Chỉ (*)</b></label>
+                                    </td>
+                                    <td>
+                                        @Html.TextArea("DiaChi")
+                                        <p style="color:red;" id="TB_DiaChi"></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label><b> Email (*)</b></label>
+                                    </td>
+                                    <td>
+                                        @Html.TextBox("Email")
+                                        <p style="color:red;" id="TB_Email"></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label><b> Số Điện Thoại (*)</b></label>
+                                    </td>
+                                    <td>
+                                        @Html.TextBox("SoDienThoai")
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label><b></b></label>
+                                    </td>
+
+                                </tr>
+
+
+                            </table>
+
+
+
+
+
+                            <input type="submit" value="Đặt Hàng" class="btn btn-danger" id="btnDatHang" />
+                            @*<input type="submit" value=" Đặtt Hàng" class="btn btn-danger" id="aa" />*@
+                            @Html.ActionLink("Mua Tiếp", "Index", "Home")
+                        }
+                    }
+                </div>
+            </div>
+            @*kiểm tra validation thông qua jquery*@
+            <script>
+                $("#btnDatHang").click(function () {
+                    var loi = 0;
+                    if ($("#TenKH").val() == "") {
+                        $("#TB_TenKH").text("ten khach hang khong duoc rong");
+                        loi++;
+                    }
+                    else {
+                        $("#TB_TenKH").text("");
+                    }
+
+                    if ($("#DiaChi").val() == "") {
+                        $("#TB_DiaChi").text("dia chi khong duoc rong");
+                        loi++;
+                    }
+                    else {
+
+                        $("#TB_TenKH").text("");
+                    }
+                    var loi;
+                    dinhdang = /^[0-9A-Za-z]+[0-9A-Za-z_.]*@@[\w\d.]+\.\w{2,4}$/;// code kiểm tra Email
+                    KTemail = dinhdang.test($('#Email').val());
+                    if (!KTemail) {
+                        $('#TB_Email').text("Email khong hop le !");
+                        loi++;
+                    }
+                    if (loi != 0) {
+                        // ngăn sự kiện submit đến sever
+                        return false;
+                    }
+                }
+                )
+            </script>
+
+        </section>
+    </main>
+    <script src="~/Content/scrip/doan.js"></script>
+    <script src="~/Content/Scripts/jquery-3.3.1.js"></script>
+
+    <script src="~/Content/Scripts/bootstrap.js"></script>
+</body>
+</html>

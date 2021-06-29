@@ -1,0 +1,84 @@
+﻿@model IEnumerable<ddooan.Models.ChiTietDonDatHang>
+
+
+@{
+    ViewBag.Title = "ChiTietDonDatHang";
+    Layout = "~/Areas/Admin/Views/Shared/layuotAdmin.cshtml";
+}
+
+<h2>ChiTietDonDatHang</h2>
+<form action="/admin/ChiTietDonDatHang/index" method="post">
+
+    <a href="/admin/ChiTietDonDatHang/create" class="btn btn-primary">Thêm mới</a>
+</form>
+<table id="example1" class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <td>
+                Mã Chi Tiết Đơn Đặt Hàng
+            </td>
+            <td>
+                Mã Đơn Đặt Hàng
+            </td>
+
+            <td>
+                Mã Sản Phẩm
+            </td>
+            <td>
+                Tên Sản Phẩm
+            </td>
+            <td>
+                Số Lượng
+            </td>
+            <td>
+                Đơn Giá
+            </td>
+
+
+
+            <td>
+                Sửa
+            </td>
+            <td>Xóa</td>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                   @item.MaChiTietDDH
+                </td>
+
+
+                <td>
+                    @item.MaDDH
+                </td>
+
+                <td>
+                    @item.MaSP
+                </td>
+
+                <td>
+                    @item.TenSP
+                </td>
+                <td>
+                    @item.SoLuong
+                </td>
+                <td>
+                    @item.DonGia
+                </td>
+                
+
+
+                <td><a class="btn btn-primary" href="@Url.Action("ChiTietDonDatHang","Sanpham1")/@item.MaChiTietDDH">Edit</a></td>
+                <td><a class="btn btn-primary" onclick="return confirm('Bạn có muốn xóa không?');" href="@Url.Action("delete","Sanpham1")/@item.MaChiTietDDH">Xóa</a></td>
+
+            </tr>
+        }
+
+</table>
+
+
+

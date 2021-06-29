@@ -1,0 +1,92 @@
+﻿@model IEnumerable<ddooan.Models.SanPham>
+
+@{
+    ViewBag.Title = "TrangTinTuc";
+    Layout = "~/Areas/Admin/Views/Shared/layuotAdmin.cshtml";
+}
+
+<h2>TrangTinTuc</h2>
+
+<form action="/admin/sanpham1/TrangTinTuc" method="post">
+
+    <a href="/admin/sanpham1/create" class="btn btn-primary">Thêm mới</a>
+</form>
+<table id="example1" class="table table-bordered table-striped">
+    <thead>
+        <tr>
+
+            <td>
+                Tên Sản Phẩm
+            </td>
+
+            <td>
+                Ngày Nhập
+            </td>
+            <td>
+                Mô tả
+            </td>
+            <td>
+                Hình Ảnh
+            </td>
+            <td>
+                Lượt Xem
+            </td>
+            <td>
+                Bình chọn
+            </td>
+            <td>
+                Số Lần Mua
+            </td>
+            <td>
+                Số Lượng Tồn
+            </td>
+
+            <td>
+                Sửa
+            </td>
+            <td>Xóa</td>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+
+
+
+            <td>
+                @item.TenSP
+            </td>
+
+            <td>
+                @item.NgayCapNhap
+            </td>
+
+            <td>
+                @item.MoTa
+            </td>
+
+            <td>
+                <img src="/Content/HinhAnhSP/@item.HinhAnh" class="profile-user-img img-responsive" />
+            </td>
+            <td>
+                @item.LuotXem
+            </td>
+            <td>
+                @item.LuotBinhChon
+            </td>
+            <td>
+                @item.SoLanMua
+            </td>
+            <td>
+                @item.SoLuongTon
+            </td>
+            <td><a class="btn btn-primary" href="@Url.Action("moi","Sanpham1")/@item.MaSP">Edit</a></td>
+            <td><a class="btn btn-primary" onclick="return confirm('Bạn có muốn xóa không?');" href="@Url.Action("delete","Sanpham1")/@item.MaSP">Xóa</a></td>
+
+        </tr>
+        }
+
+</table>
+

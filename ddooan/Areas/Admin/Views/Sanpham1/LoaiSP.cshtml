@@ -1,0 +1,66 @@
+﻿@model IEnumerable<ddooan.Models.LoaiSanPham>
+
+@{
+    ViewBag.Title = "LoaiSP";
+    Layout = "~/Areas/Admin/Views/Shared/layuotAdmin.cshtml";
+}
+
+<form action="/admin/sanpham1/LoaiSP" method="post">
+
+    <a href="/admin/sanpham1/LoaiSP" class="btn btn-primary">Thêm mới</a>
+</form>
+<table id="example1" class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <td>
+                Mã Loại Sản Phẩm
+            </td>
+            <td>
+                Tên Loại
+            </td>
+
+            <td>
+                Icon
+            </td>
+            <td>
+                Bí Danh
+            </td>
+
+            <td>
+                Sửa
+            </td>
+            <td>Xóa</td>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.MaLoaiSP
+                </td>
+
+
+                <td>
+                    @item.TenLoai
+                </td>
+
+                <td>
+                    @item.Icon
+                </td>
+
+                <td>
+                    @item.BiDanh
+                </td>
+
+
+                <td><a class="btn btn-primary" href="@Url.Action("moi","Sanpham1")/@item.MaLoaiSP">Edit</a></td>
+                <td><a class="btn btn-primary" onclick="return confirm('Bạn có muốn xóa không?');" href="@Url.Action("delete","sanpham")/@item.MaLoaiSP">Xóa</a></td>
+
+            </tr>
+        }
+
+</table>
+
+

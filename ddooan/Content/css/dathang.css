@@ -1,0 +1,400 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-size: 13px;
+	margin: 0px auto;
+}
+.Menu{
+	background: #cd0000;
+	display: flex;
+	height: auto;
+	border:0px;
+	width: auto;
+	margin-bottom: 10px;
+	box-shadow: 0 1px 10px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.Cangiua{
+	margin: auto;
+}
+.CanLOGO{
+	background: #cd0000;
+}
+#LOGO{
+	position: relative;
+	top: 8px;
+	height: 59px;
+	background: #cd0000;
+	float: left;
+	left: -23px;
+}
+#LOGO a{
+}
+
+.TimKiem{position: relative;top: -1px;/* bottom: 10px; */left: -19px;height: 0px;}
+#TimKiem{
+	
+height: 37px;
+	
+width: 263px;
+	
+margin-left: 7px;
+	
+margin-top: 17px;
+	
+border: 1px solid white;
+	
+border-radius: 5px;
+	
+margin-bottom: -8px;
+}
+
+#icontimkiem{
+	margin: -23px;
+}
+.menutop{
+
+top: 0px;
+
+position: relative;
+
+left: 26px;
+
+/* background: white; */
+
+height: 66px;
+
+margin-left: 414px;
+
+margin-top: -47px;
+}
+.Cangiua .menutop i{
+	width: 18px;
+	height: 22px;
+	display: block;
+	margin: 0px auto;
+	font-size: 2.3em;
+}
+.menutop ul{
+	
+}
+.menutop ul li{
+	list-style: none;/*Xoa dau cham cau*/
+	float: left;/*Can ngang*/
+}
+.menutop ul li .a1{
+	/*transition: all.5s ease-in-out;*/
+	position: relative;
+	top: 5px;
+	text-decoration: none;/*Xoa dau gach chan*/
+	height: 100%;
+	line-height: 45px;/*Chinh chieu cao chu*/
+	display: block;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: bold;
+	padding: 0px 15px 0px 30px;
+}
+
+ul.dropdown > li > ul{
+	left: 0;
+	visibility: hidden;
+	position: absolute;
+	z-index: 150;
+	width: 100%;
+	top: 109px;
+	padding: 5px 5px;
+	background: #fff;
+	box-shadow: 0px 2px 6px 0px rgba(50, 50, 50, 0.33);
+}
+ul.dropdown .submenu{
+	width: 100%;
+	float: left;
+	clear: none;
+	height: auto;
+	overflow: hidden;
+	border-top: none;
+	border-bottom: none;
+	text-align: left;
+	background: #fff;
+	box-shadow: 0px 2px 6px 0px rgba(50, 50, 50, 0.33);
+}
+ul.dropdown ul .submenu h4{
+	padding-bottom: 5px;
+	margin-bottom: 23px;
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: bold;
+	color: #000;
+	margin-left: 9px;
+	margin-top: 10px;
+}
+ul.dropdown .submenu ul{
+	border: none;
+}
+ul.dropdown .col-sm-3{
+	margin-bottom: 22px;
+}
+ul.dropdown .col-sm-3 a{text-decoration: none;color: #000;font-size: 
+15px;display: inline-block;margin-right: 42px;margin-left: 9px;width: 124px;height: 20px;}
+.menutop ul.dropdown li ul .col-sm-3 span:hover {
+	background: #ff3300;
+	color: #fff;
+
+}
+.menutop ul.dropdown li:hover .submenu{
+	opacity: 1;
+	visibility: visible;
+
+}
+
+.Phanhai{
+	margin: auto;
+	padding-bottom: 50px;
+	width: 1170px;
+}
+
+#Phanhaine{
+
+}
+.natavion-row{
+	width: 1170px;
+	overflow: hidden;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #666666;
+	text-align: left;
+	font-size: 15px;
+	position: relative;
+	margin: auto;
+}
+.natavion-row .Home{
+	color: #666666;
+}
+.natavion-row a{
+	color: #666666;
+}
+.Phangiuatrang{
+	width: 1170px;
+	margin: auto;
+	height: 335px;
+}
+.box-mid{
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+
+}
+.mid-title{
+	margin-bottom: 20px;
+	border-bottom: 1px solid #d7d7d7;
+	padding-bottom: 21px;
+}
+.titleL{
+	float: left;
+	color: #000;
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-right: 1px solid #cd0000;
+	padding-right: 5px;
+	margin-left: 16px;
+	font-family: sans-serif;
+}
+.mid-content{
+	height: auto;
+	padding-left: 16px;
+	width: 50%;
+	float: left;
+
+}
+.order-complete{
+	padding: 15px 0;
+
+}
+.order-complete .title-complete{
+	font-size: 35px;
+    color: #81b727;
+    text-transform: uppercase;
+    line-height: 35px;
+    padding-bottom: 22px;
+}
+.thankiu{
+    font-size: 16px;
+    font-family: sans-serif;
+
+}
+.order-complete .thankiu strong{
+	color: #72a61d;
+
+}
+.Tieptucmuahang{
+	color: #333;
+	background-color: #fff;
+	border-color: #ccc;
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1.42857143;
+	text-align: center;
+	cursor: pointer;
+	border: 1px solid #000;
+	border-radius: 4px;
+}
+.Tieptucmuahang:hover{
+	background: #dae0e5;
+}
+.Pic-Payo{
+    width: 48%;
+    float: right;
+    margin-top: -20px;
+}
+.Pic-Payo img{
+	height: 100%;
+    width: 42%;
+    padding: 0 37%;
+}
+
+
+
+p{
+	padding-bottom: 20px;
+}
+
+img{
+	border: 0px;
+	max-width: 100%;
+	height: auto;
+}
+a{
+	text-decoration: none;
+	color: #000;
+	list-style: none;
+}
+
+h1, h2, h3, h4, h5{
+	font-size: 100%;
+	font-weight: normal;
+	font-family: sans-serif;
+}
+ul{
+	list-style: none;
+}
+li{
+	list-style: none;
+}
+#PhanCuoiTrang{
+		border-top: 1px solid #ececec;
+}
+.footer{
+	background: #fff;
+	font-size: 15px;
+	height: 220px;
+	width: 1170px;
+	position: relative;
+	line-height: 20px;
+	margin: auto;
+
+}
+.two-footer{
+	padding: 25px 0;
+}
+.three-footer{
+	width: 1170px;
+
+}
+.row{
+	height: 100%;
+	/* height: auto; */
+	margin-right: -15px;
+	margin-left: -15px;
+}
+.Hotrokhachhang{
+	width: 59%;
+	padding-left: 35px;
+	float: left;
+}
+.hotline{
+	padding-right: 50px;
+}
+.Hotro{width: 55%;float: left;}
+
+.gioithieuxt{
+	width: 45%;
+	float: left;
+}
+.footer .tit{
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #000;
+	padding-bottom: 20px;
+}
+.Hotrokhachhang p{
+padding-bottom: 5px;
+}
+.Hotrokhachhang a{
+	color: #288ad6;
+}
+
+.PhuongThucThanhToan{
+	width: 17%;
+	float: left;
+
+}
+.content{
+
+}
+.Chapnhanthanhtoan{
+
+}
+.DiachiShowroom{width: 37%;float: left;}
+.DCSR p{
+	padding-bottom: 5px;
+}
+.DCSR a{
+color: #288ad6;
+}
+
+
+.ThisIsTheEnd{
+	text-align: center;
+	background: #333333;
+	padding: 0px 0;
+	color: #fff;
+	padding-top: 0px;
+	font-size: 12px;
+}
+.canchinh{
+	margin-left: -15px;
+	margin-right: -15px;
+}
+.coppyright{
+
+position: relative;
+
+top: 30px;
+
+right: 480px;
+}
+.coppyright b{
+	font-weight: bold;
+}
+.iconlast{
+	padding-right: 0 !important;
+}
+.textright{
+	/*text-align: right;*/
+}
+.Chuyenbanle{position: relative;top: 15px;}
+.iconlast{
+	
+position: relative;
+	
+left: 534px;
+	
+bottom: 9px;
+}

@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "dangnhap";
+    Layout = "~/Views/TrangSanPham/TrangSanPham.cshtml";
+}
+
+
+<div align="center" style="background-color: gray;">
+    <img src="~/Content/images/anhlogodecao.jpg" alt="" style=" height:200px">
+
+    <h2>Đăng nhập vào tài khoản của bạn</h2>
+    <form action="index.html">
+        <table>
+            <tr>
+                <td><strong>Tên đăng nhập</strong></td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="Mời bạn nhập tên đăng nhập" name="" autofocus required autocomplete="off" size="70" style="line-height: 30px;"></td>
+            </tr>
+            <tr>
+                <td><strong>Mật khẩu</strong></td>
+            </tr>
+            <tr>
+                <td><input type="password" placeholder="Mời bạn nhập mật khẩu" name="" required size="70" style="line-height: 30px;"></td>
+            </tr>
+        </table>
+
+        <label><strong><input type="checkbox" name="remember" value="remember">Nhớ mật khẩu</label>&nbsp;&nbsp;&nbsp;<a href="quenmk.html" style="text-decoration: underline; font-style: italic; color: blue">Quên mật khẩu?</a><br>
+        <input type="submit" formaction="@Url.Action("Index","Home")" name="" value="Đăng nhập" style="width: 180px;height: 40px; background-color:#4A708B;margin-top: 10px; margin-bottom: 22px; height: 35px;width: 80px;border-radius: 6px; color: white">
+        @*<button class="back" style="height: 35px; width: 80px; margin-top: 15px; border-radius: 6px;color:black"><a href="@Url.Action("Index","Home")">ĐĂNG NHẬP</a></button>*@
+        <input type="submit" formaction="@Url.Action("Index","Home")" name="" value="Trở Về" style="width: 180px;height: 40px; background-color:#4A708B;margin-top: 10px; margin-bottom: 22px; height: 35px;width: 80px;border-radius: 6px; color: white">
+
+        @*<button class="back" style="height: 35px; width: 80px; margin-top: 15px; border-radius: 6px;"><a href="../html/trangchu.html">Trở về</a></button>*@
+    </form>
+    <div>Bạn chưa có tài khoản?<a href="../html/TrangDangky.html" style="font-size: 17px; text-decoration: none; font-style: italic ; color: blue; margin-left: 10px">Nhấn đây để đăng ký!</a></div>
+</div>

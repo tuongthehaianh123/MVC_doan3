@@ -1,0 +1,28 @@
+﻿@using ddooan.Models
+@model IEnumerable<SanPham>
+
+
+<div class="divcontainer">
+    <div class="page-dau">
+        NEW
+    </div>
+    <div class="khung">
+        <ul id="list" style="padding-left:0px ;">
+            @foreach (var groupItem in Model.GroupBy(n => n.LoaiSanPham))
+            {
+
+                if (groupItem.Key != null)
+                {
+                    <li><a href="@Url.Action("Index","TrangSanPham")">@groupItem.Key.TenLoai</a></li>
+                }
+
+                 
+
+            }
+        </ul>
+     
+        </div>
+</div>
+
+
+

@@ -1,0 +1,23 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+img{
+    max-width: 100%;
+}
+html,body{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width:100%;
+    max-width: 100%;
+}
+.navbar-inverse{
+     padding: 12px 0;
+     padding-bottom: 15px;
+     padding-top: 6px;
+     text-align: center ;
+     background-image: none;
+     background-color: aqua;
+}

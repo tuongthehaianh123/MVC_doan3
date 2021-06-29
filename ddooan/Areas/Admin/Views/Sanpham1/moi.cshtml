@@ -1,0 +1,82 @@
+﻿@model ddooan.Models.SanPham
+
+@{
+    ViewBag.Title = "moi";
+    Layout = "~/Areas/Admin/Views/Shared/layuotAdmin.cshtml";
+}
+
+<h2>Edit</h2>
+<form action="/admin/sanpham1/moi" method="post">
+
+
+
+
+   
+
+      
+    <div class="form-group">
+        <label>Mã Sản Phẩm</label>
+        <input type="hidden" class="form-control"value="@Model.MaSP" id="masanpham" name="MaSP"  />
+    </div>
+    <div class="form-group">
+        <label>Tên Sản Phẩm</label>
+        <input type="text" class="form-control" value="@Model.TenSP" id="tensanpham" name="TenSP" />
+    </div>
+    <div class="form-group">
+        <label>Đơn Giá</label>
+        <input type="text" class="form-control" value="@Model.DonGia" id="donGia" name="DonGia" />
+    </div>
+    <div class="form-group">
+        <label>Ngày Cập Nhập</label>
+        <input type="date" class="form-control" value="@Model.NgayCapNhap" id="NgayCapNhap" name="NgayCapNhap" />
+    </div>
+    <div class="form-group">
+        <label>Cấu Hình</label>
+        <input type="text" class="form-control" value="@Model.CauHinh" id="CauHinh" name="CauHinh" />
+    </div>
+    <div class="form-group">
+        <label>Mô Tả</label>
+        <input type="text" class="form-control" value="@Model.MoTa" id="MoTa" name="MoTa" />
+    </div>
+    <div class="form-group">
+        <label>Hình Ảnh</label>
+        <input type="file" id="HinhAnh" value="@Model.HinhAnh" name="HinhAnh" />
+    </div>
+    <div class="form-group">
+        <label>Số Lượng Tồn</label>
+        <input type="text" class="form-control" value="@Model.SoLuongTon" id="SoLuongTon" name="SoLuongTon" />
+    </div>
+    <div class="form-group">
+        <label>Lượt Xem</label>
+        <input type="text" class="form-control" value="@Model.LuotXem" id="LuotXem" name="LuotXem" />
+    </div>
+    <div class="form-group">
+        <label>Lượt Bình Chọn</label>
+        <input type="text" class="form-control" value="@Model.LuotBinhChon" id="LuotBinhChon" name="LuotBinhChon" />
+    </div>
+    <div class="form-group">
+        <label>Số Lần Mua</label>
+        <input type="text" class="form-control" value="@Model.SoLanMua" id="SoLanMua" name="SoLanMua" />
+    </div>
+    <div class="form-group">
+        <label>Moi</label>
+        <input type="text" class="form-control" value="@Model.Moi" id="Moi" name="Moi" />
+    </div>
+
+    <div class="form-group">
+        <label>Mã Nhà Sản Xuất</label>
+        <input type="text" class="form-control" value="@Model.MaNSX" id="MaNSX" name="MaNSX" />
+    </div>
+    <div class="form-group">
+        <label>Mã Loại Sản Phẩm</label>
+        <input type="text" class="form-control" value="@Model.MaLoaiSP" id="MaLoaiSP" name="MaLoaiSP" />
+    </div>
+    <div class="form-group">
+        <label>Đã Xoá</label>
+        <input type="text" class="form-control" value="@Model.DaXoa" id="DaXoa" name="DaXoa" />
+    </div>
+
+    <button class="btn btn-primary" type="submit">Lưu</button>
+</form>
+
+

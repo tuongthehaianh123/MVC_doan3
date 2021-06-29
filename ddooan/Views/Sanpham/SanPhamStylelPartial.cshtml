@@ -1,0 +1,53 @@
+﻿@using ddooan.Models;
+@model IEnumerable<SanPham>
+
+
+@foreach (var item in Model.Take(3))
+{
+
+
+    <div class="col-4">
+        <div class="divcontainer1">
+            <div class="khung-content">
+                <label class="label label-danger lable-moi">Mới</label>
+
+                <a href="@Url.Action("xemchitiet","Sanpham",new{ id=item.MaSP})"><img src="@Url.Content("~/Content/HinhAnhSP/"+item.HinhAnh)" style="max-width:100%"></a>
+                <a href="" class="tenAcc">
+                    @item.TenSP
+
+                </a>
+
+                <h4>
+                    <span class="dongia" style="color:antiquewhite;">
+                        @string.Format("{0:#,##0}", item.DonGia)
+
+                        <b>VNĐ</b>
+                    </span>
+                </h4>
+
+            </div>
+            <a href="@Url.Action("XemGioHang","GioHang", new {@MaSP=item.MaSP, @strURl=Request.Url})"> <input type="button" id="chonmua" style="clo" class="add" value="Mua"></a>
+
+            <a href="@Url.Action("ThemGioHang","GioHang", new {@MaSP=item.MaSP, @strURl=Request.Url})"> <input type="button" id="chonmua" class="add" value="Thêm Giỏ Hàng"></a>
+
+        </div>
+    </div>
+
+}
+
+
+@*<div id="cart-container" style="">
+        <div class="cart">
+            <a href="@Url.Action("XemGioHang","GioHang")"
+
+            <i class="fa fa-shopping-cart openCloseCart" aria-hidden="true" style="float: left; margin: 0px -267px;color: blanchedalmond;"
+               title="Giỏ hàng"> @ViewBag.TongTien.ToString("#,##") VND  (<span>@ViewBag.TongSoLuong)</span></i>
+               <span id="itemCount" style="display: none;"></span>
+            </a>
+        </div>
+
+    </div>*@
+
+
+
+@*@string.Format("{0:#,##0}", item.DonGia)*@

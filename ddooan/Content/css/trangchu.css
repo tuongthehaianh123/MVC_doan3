@@ -1,0 +1,25 @@
+body{
+    overflow-x:hidden;
+}
+header{
+    width: 95%;
+  
+}
+nav{
+    width: auto;
+    height: 60px;
+ 
+}
+nav .col-md-12{
+height: 100%;
+
+}
+#p_slide{
+height: 200%;
+width: 95%;
+margin-left: 2.5%;
+
+}
+@media only screen and (min-with:768px){
+    .col-1{width :8.33%}
+}

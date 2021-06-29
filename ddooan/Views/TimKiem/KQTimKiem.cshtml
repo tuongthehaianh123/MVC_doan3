@@ -1,0 +1,52 @@
+﻿
+@using ddooan.Models;
+@using PagedList.Mvc;
+@model PagedList.IPagedList<SanPham>
+
+
+@{
+    ViewBag.Title = "KQTimKiem";
+    Layout = "~/Views/TrangSanPham/TrangSanPham.cshtml";
+}
+
+
+
+
+@foreach (var item in Model.Take(8))
+{
+
+
+    <div class="col-3">
+        <div class="divcontainer1">
+            <div class="khung-content">
+
+                <a href="@Url.Action("xemchitiet","Sanpham",new{ id=item.MaSP})">
+                    <img src="@Url.Content("~/Content/HinhAnhSP/"+item.HinhAnh)"
+                         style="max-width:100%">
+                </a>
+                <a href="#" class="tenAcc">
+                    @item.TenSP
+
+                </a>
+
+                <h4>
+                    <span class="dongia" style="color:antiquewhite;">
+                        @item.DonGia
+                        <b>VNĐ</b>
+                    </span>
+                </h4>
+
+            </div>
+            <a href="@Url.Action("ThemGioHang","GioHang", new {@MaSP=item.MaSP, @strURl=Request.Url})"> <input type="button" id="chonmua" class="add" value="Thêm Giỏ Hàng"></a>
+
+        </div>
+
+    </div>
+
+}
+<div class="chonmua">
+    Trang@( Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)/@Model.PageCount
+    @Html.PagedListPager(Model, Page => Url.Action("KQTimKiem", new { Page = Page, @sTuKhoa = ViewBag.TuKhoa }))
+
+</div>
+

@@ -1,0 +1,265 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+.header_navbar
+{
+    height: 30px;
+    
+    margin-top: -15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header_navbar .navbar
+{
+    line-height: 30px;
+    padding-top: 0px;
+    display: flex;
+}
+.header_navbar .navbar li
+{
+    list-style: none;    
+    margin-left: 30px;
+}
+.menu
+{
+    margin-top: 30px;
+}
+.menu
+{
+    width: 100%;
+}
+.thanhmenu
+{
+    position: relative;
+    width: 100%;
+	height: 40px;
+	background-color: gray;
+}
+.thanhmenu .menungang {
+    margin-top: 0;
+	width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.thanhmenu .menungang li {
+	display: inline-block;
+	height: 100%;
+	position: relative;
+}
+.thanhmenu .menungang li a {
+	text-decoration: none;
+	color: black;
+	font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    line-height: 40px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+.thanhmenu .menungang li a:hover {
+    background-color: rgb(119, 114, 114);
+    transition: 0.5s;
+}
+.thanhmenu .menungang li ul {
+	width: 250px;
+	list-style: none;
+	position: absolute;
+	top: 38px;
+	left: -42px;
+	visibility: hidden;
+	transform-origin: 0% 0%;
+	transition: 0,1s;
+    transform: translateY(-10px);
+    z-index: 99;
+
+}
+.thanhmenu .menungang li ul li {
+	background: greenyellow;
+	width: 100%;
+	padding: 10px 10px;
+}
+.thanhmenu .menungang li:hover ul {
+	transform: translateY(0px);
+    visibility: visible;
+    transition: 0.5s;
+}
+.thanhmenu .menungang li ul li a {
+	text-decoration: none;
+	display: block;
+	color: white;
+    font-family: tahoma;
+}
+.thanhmenu .menungang li ul li:hover {
+	background-color: rgb(119, 114, 114);
+}
+
+/*  Menu responsive*/
+.thanhmenu2 {
+    display: block;
+	width: 100%;
+	height: 40px;
+	background-color: greenyellow;
+}
+.thanhmenu2 .menungang2 {
+    margin-left: -120px;
+    margin-top: 0;
+    height: 40px;
+    text-align: center;
+}
+.thanhmenu2 .menungang2 li {
+	display: inline-block;
+	height: 100%;
+	position: relative;
+}
+.thanhmenu2 .menungang2 li a {
+	text-decoration: none;
+	color: white;
+	font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    line-height: 40px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+.thanhmenu2 .menungang2 li a:hover {
+    background-color: rgb(119, 114, 114);
+    transition: 0.5s;
+}
+.thanhmenu2 .menungang2 li ul {
+	width: 250px;
+	list-style: none;
+	position: absolute;
+	top: 39px;
+	left: 0px;
+	visibility: hidden;
+	transform-origin: 0% 0%;
+	transition: 0,1s;
+    transform: translateY(-10px);
+    z-index: 20;
+
+}
+.thanhmenu2 .menungang2 li ul li {
+    border-radius: 5px;
+	width: 100%;
+	padding: 10px 10px;
+}
+.thanhmenu2 .menungang2 li:hover ul {
+	transform: translateY(0px);
+    visibility: visible;
+    transition: 0.5s;
+}
+.thanhmenu2 .menungang2 li ul li a {
+	text-decoration: none;
+	display: block;
+	color: white;
+    font-family: tahoma;
+}
+.thanhmenu2 .menungang2 li ul li:hover {
+	background-color: rgb(119, 114, 114);
+}
+
+
+#Listsanpham
+{
+    top: 70px;
+    left: 59%;
+    position: fixed;
+    z-index: 15;
+    background-color: yellow;
+    display: none;
+}
+#giohang:hover #Listsanpham
+{
+    display: block;
+}
+#Listsanpham table
+{
+    border-collapse:collapse ;
+}
+.exit
+{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 25px;
+    height: 25px;
+}
+.exit .x
+{
+    width: 100%;
+    height: 100%;
+}
+.main
+{
+    border-bottom: 2px solid gray;
+}
+
+
+#product
+{
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    border-bottom: 2px solid gray;
+}
+#imgctsp
+{
+    width: 96%;
+    height: auto;
+}
+.imgsp1
+{
+    width: 45%;
+    height: auto;
+}
+#contentsp
+{
+    width: 90%;
+    height: auto;
+}
+.top
+{
+    margin-left: 35px;
+    font-size: 20px;
+}
+.bottom
+{
+    margin-left: 35px;
+    font-size: 20px;
+}
+
+#infosp
+{
+    width: 100%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.info
+{
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+#footer
+{
+    width: 100%;
+    height: 100px;
+    margin-top: 2px;
+}
+.center
+{
+    text-align: center;
+    font-size: 25px;
+    line-height: 40px;
+    width: 100%;
+    height: 100px;
+
+}
+
+

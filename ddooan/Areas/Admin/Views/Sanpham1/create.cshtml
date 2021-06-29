@@ -1,0 +1,73 @@
+﻿@model ddooan.Models.SanPham
+
+@{
+    ViewBag.Title = "create";
+    Layout = "~/Areas/Admin/Views/Shared/layuotAdmin.cshtml";
+}
+
+<form action="/admin/sanpham1/create" method="post">
+    <div class="form-group">
+        <label>Mã Sản Phẩm</label>
+        <input type="text" class="form-control" id="nhanvienid" name="MaSP" c />
+    </div>
+    <div class="form-group">
+        <label>Tên Sản Phẩm</label>
+        <input type="text" class="form-control" id="tennhanvien" name="TenSP" />
+    </div>
+    <div class="form-group">
+        <label>Đơn Giá</label>
+        <input type="text" class="form-control" id="donGia" name="DonGia" />
+    </div>
+    <div class="form-group">
+        <label>Ngày Cập Nhập</label>
+        <input type="date" class="form-control" id="nhanvienid" name="NgayCapNhap" />
+    </div>
+    <div class="form-group">
+        <label>Cấu Hình</label>
+        <input type="text" class="form-control" id="nhanvienid" name="CauHinh" />
+    </div>
+    <div class="form-group">
+        <label>Mô Tả</label>
+        <input type="text" class="form-control" id="sodienthoai" name="MoTa" />
+    </div>
+    <div class="form-group">
+        <label>Hình Ảnh</label>
+        <input type="file" id="HinhAnh" name="HinhAnh" />
+    </div>
+    <div class="form-group">
+        <label>Số Lượng Tồn</label>
+        <input type="text" class="form-control" id="sodienthoai" name="SoLuongTon" />
+    </div>
+    <div class="form-group">
+        <label>Lượt Xem</label>
+        <input type="text" class="form-control" id="sodienthoai" name="LuotXem" />
+    </div>
+    <div class="form-group">
+        <label>Lượt Bình Chọn</label>
+        <input type="text" class="form-control" id="sodienthoai" name="LuotBinhChon" />
+    </div>
+    <div class="form-group">
+        <label>Số Lần Mua</label>
+        <input type="text" class="form-control" id="sodienthoai" name="SoLanMua" />
+    </div>
+    <div class="form-group">
+        <label>Moi</label>
+        <input type="text" class="form-control" id="sodienthoai" name="Moi" />
+    </div>
+
+    <div class="form-group">
+        <label>Mã Nhà Sản Xuất</label>
+        <input type="text" class="form-control" id="sodienthoai" name="MaNSX" />
+    </div>
+    <div class="form-group">
+        <label>Mã Loại Sản Phẩm</label>
+        <input type="text" class="form-control" id="sodienthoai" name="MaLoaiSP" />
+    </div>
+    <div class="form-group">
+        <label>Đã Xoá</label>
+        <input type="text" class="form-control" id="sodienthoai" name="DaXoa" />
+    </div>
+
+    <button class="btn btn-primary" type="submit">Lưu</button>
+</form>
+

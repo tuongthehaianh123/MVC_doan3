@@ -1,0 +1,175 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+*{
+    box-sizing: border-box;
+}
+.col-1{
+    width: 8.33%;
+}
+.col-2{
+    width: 16.66%;
+}
+.col-3{
+    width: 25%;
+}
+.col-4{
+    width: 33.33%;
+}
+.col-5{
+    width: 41.66%;
+}
+.col-6{
+    width: 50%;
+}
+.col-7{
+    width: 58.33%;
+}
+.col-8{
+    width: 66.66%;
+}
+.col-9{
+    width: 75%;
+}
+.col-10{
+    width: 83.33%;
+}
+.col-11{
+    width: 91.66%;
+}
+
+.col-12{
+width: 100%;
+}
+
+[class*="col-"]{
+    float: left;
+    border: 1px ;
+}
+.row::after{  /*giả rỗng*/
+
+    content: "";
+    clear: both;
+}
+/**/
+header{
+    width: 100%;
+    height: 60px;
+    background-color: darkcyan;
+}
+
+.form-admin img{
+    width: 50px;
+    height: 50px;
+    margin-left: 1400px;
+}/**/
+nav{
+    width: 100%;
+    background-color: darkgray;
+    height: 65px;
+}
+#myInput {
+    
+    
+   
+    width: 400px;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.search {
+    margin-left: 20px;
+    
+}
+/**/
+.menu ul li
+
+{   
+   margin-top: 10px;
+    list-style: none; /* làm ẩn cái chấm đen của thẻ*/
+    float: left;
+    width: 120px;
+    line-height: 40px;
+    max-height: 50px;
+    border-radius: 5px;
+   
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    
+    text-transform: uppercase;
+
+} 
+.menu li a {
+    text-decoration: none; /* làm ẩn gạch chân ở dưới chữ */
+    color: black;
+}
+.menu li:hover{
+    
+    background-color: lightcoral;
+   
+}
+.menu-nho{
+    background-color: wheat;
+    text-transform: uppercase;
+    position: absolute;
+    display: none;
+    width: 120px;
+}
+.menu-nho:hover{
+    
+    
+}
+.menu ul li:hover .menu-nho{
+    display: block;
+}
+/*main*/
+main{
+    margin: auto;
+    width: 1400px;
+    background-color:#ddd ;
+    height: 400px;
+    
+}
+.khung-content a{
+    color:gray;
+}
+.opa :hover{
+    opacity: 0.8;
+}
+.tenAcc{
+    font-weight: bold;
+    font-size: large;
+    text-decoration: none;
+}
+.color-p{
+    padding: 5px;
+}
+.dongia{
+    font-weight: 500;
+    line-height: 1.1;
+    padding-bottom: 10px;
+    font-size: 20px;
+    padding-top: 10px;
+}
+#chonmua{
+    margin-top: 10px;
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+    padding: 5px;
+    margin-bottom: 10px ;
+}
+.divcontainer1{
+    border: 2px solid antiquewhite;
+    margin: 10px 0px;
+   border-radius: 10px;
+   margin-left: 10px;
+    background-color: white;
+    display: flex;
+}
+
+
+

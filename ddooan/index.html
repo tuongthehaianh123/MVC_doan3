@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DECAO</title>
+   <link rel="stylesheet" href="../css/sanpham.css">
+    <link rel="stylesheet" href="../css/trang.css">
+    <link rel="stylesheet" href="../css/trangchu.css">
+    <link rel="stylesheet" href="../css/trangchu1.css">
+    <link rel="stylesheet" href="../css/">
+     <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    </head>
+<body style="background-color: gray;">  
+    <header id="head" class="row">
+        <div class="col-2">
+            <a href="#" style="text-align:center">
+                <img src="../images/anhlogodecao.jpg" style="max-width: 78%;padding: 0px;height: 131px;">
+            </a>
+        </div>
+        <div class="col-6">
+            <form>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="search..." style="margin-left: -64px;">
+                    <span>
+                       <!-- <button class="btn-primary" type="button">
+                            <span class=""><i class="fa fa-search" aria-hidden="true" style="color:blue;"></i> </span>
+                        </button>--> 
+
+                    </span>
+                </div>
+            </form>
+        </div>
+        <div class="col-4">
+            <div class="item-header">
+                <div id="cart-container" style="">
+                    <div class="cart">
+                      <i class="fa fa-shopping-cart fa-3x openCloseCart" aria-hidden="true" style="float: left; margin: 48px 54px;color: blanchedalmond;"
+                        title="Giỏ hàng"></i>
+                    </div>
+                    <span id="itemCount" style="display: none;"></span>
+                </div>
+                <div id="shoppingCart">
+                  <div id="cartItemsContainer">
+                      <h2 style="float: left;">Giỏ hàng</h2>
+                      <button id="emptyCart">Xóa tất cả</button>
+                      <i class="fa fa-times-circle-o fa-3x openCloseCart" aria-hidden="true"></i>
+                      <div id="cartItems"></div>
+                      <span id="cartTotal"></span>
+                      <a href="thongtin.html" style="margin-left: 200px; width: 150px; height: 100px; background-color: rgb(94, 127, 233); color: black; text-decoration: none;">Xác nhận thông tin</a>
+                     
+                    </div>
+                </div>
+
+
+
+            </div>  
+            
+            <div class="item-header" style="padding-top: 45px;">
+                <button  type="button" class="btn-default ">
+                    <a href="../html/dangnhap.html"> đăng nhập</a>
+                </button>
+            </div>
+        </div>
+        </header>
+        <nav id="_nav" class="row">
+            <div class="menu">
+                <ul>
+                    <li> <a href="../html/trangchu.html"> Trang chủ</a></li>
+                    <li><a href="../html/Trangsanpham.html"> Sản phẩm</a></li>
+                    <li><a href="../css/trangkhuyenmai.css">Sale</a></li>
+                    <li> <a href="../html/tranggioithieu.html"  target="_bank"> Giới thiệu</a></li>
+                    <li><a href="../html/TrangLienhe.html"> Liên Hệ</a></li>
+                    <li><a href="../html/TrangDangky.html"> Tài khoản</a>
+                    
+                       
+                    
+    
+                </ul>
+    
+            </div>
+        </nav>
+        <main>
+            <!--<section>
+                <div class="col-3">
+                    <div class="divcontainer">
+                        <div class="page-dau">
+                            NEW
+                        </div>
+                        <div class="khung">
+                            <ul id="list" style="padding-left:20px ;">
+                                <li><a href="#">SẢN PHẨM</a></li>
+                                <li><a href="#">ÁO</a></li>
+                                <li><a href="#">
+                                       ÁO THUN $ LEN
+                                    </a></li>
+                                <li><a href="">ÁO MANGTO</a></li>
+                                <li><a href="">ÁO KHOÁC</a></li>
+                                <li><a href="">ÁO PHÔNG</a></li>
+                                <li><a href=""> ÁO SƠ MI</a></li>
+                                <li><a href=""> ÁO BA LỖ</a></li>
+                                <li><a href=""> ÁO VEST</a></li>
+                                <li><a href=""> QUẦN ÂU</a></li>
+                                <li><a href=""> QUẦN JEAN</a></li>
+                                <li><a href=""> QUẦN NGỐ</a></li>
+                                <li><a href=""> QUẦN CỌC</a></li>                         
+                                </ul>
+                  </div>
+
+                  <div class="col-9">
+                    <div class="Phanhai" id="Phanhaine">
+                        <div id="Banner" class="canhang">
+                            <div class="slide">
+                                <div class="dieuhuong">
+                                    <i class="fa fa-chevron-circle-left" onclick="Back();"></i>
+                                    <i id="Phai" class="fa fa-chevron-circle-right" onclick="Next();"></i>
+                                </div>
+                                <div class="chuyen-slide">
+    
+                                    <a href="" title=""></a>
+                                    <img src="../images/DavidBeckham.jpg" alt="Hình ảnh">
+                                    </a>
+    
+                                    <a href="" title="">
+                                        <img src="../image/anhchay2.jpg" alt="">
+                                    </a>
+    
+                                    <a href="" title="">
+                                        <img src="../image/anhchay3.jpg" alt="">
+                                    </a>
+    
+                                    <a href="" title="">
+                                        <img src="../image/anhchay1.jpg" alt="">
+                                    </a>
+                  </div>
+            </section>-->
+            <section>
+                <div class="col-2">
+                    
+    
+                    <div class="divcontainer">
+                        <div class="page-dau">
+                            NEW
+                        </div>
+                        <div class="khung">
+                            <ul id="list" style="padding-left:0px ;">
+                                <li><a href="#">SẢN PHẨM</a></li>
+                                <li><a href="#">ÁO</a></li>
+                                <li><a href="#">
+                                       ÁO THUN $ LEN
+                                    </a></li>
+                                <li><a href="">ÁO PHÔNG</a></li>
+                                <li><a href="">QUẦN JEAN</a></li>
+                                <li><a href="">ÁO NGỐ</a></li>
+                                <li><a href="">ÁO MANGTO</a></li>
+                                <li><a href="">ÁO KHOÁC</a></li>
+                                <li><a href="">ÁO PHÔNG</a></li>
+                                <li><a href=""> ÁO SƠ MI</a></li>
+                                <li><a href=""> ÁO BA LỖ</a></li>
+                                <li><a href=""> ÁO VEST</a></li>
+                                <li><a href=""> QUẦN ÂU</a></li>
+                                <li><a href=""> QUẦN JEAN</a></li>
+                                <li><a href=""> QUẦN NGỐ</a></li>
+                                    
+                            </ul>
+                        </div>
+                    </div>
+                    
+    
+                </div>
+                <div class="col-9">
+                    <div class="Phanhai" id="Phanhaine">
+                        <div id="Banner" class="canhang">
+                            <div class="slide">
+                                <div class="dieuhuong">
+                                
+                                    <i class="fa fa-chevron-circle-left" onclick="Back();"></i>
+                                    <i id="Phai" class="fa fa-chevron-circle-right" onclick="Next();"></i>
+                                </div>
+                                <div class="chuyen-slide">
+    
+                                    <a href="" title=""></a>
+                                    <img src="../images/anhbia16.jpg" alt="Hình ảnh"style="max-width: 100%;">
+                                    
+    
+                                    <a href="" title="">
+                                        <img src="../images/anhbia1.jpg" alt="" style="max-width: 100%;">
+                                    </a>
+    
+                                    <a href="" title="">
+                                        <img src="../images/anhcanh3.jpg" alt="" style="max-width: 100%;">
+                                    </a>
+    
+                                    <a href="" title="">
+                                        <img src="../images/anhcanh2.jpg" alt="" style="max-width: 100%;">
+                                    </a>
+    
+                                    <script src="../scrip/home.js"></script>
+                                    <script>var KichThuoc = document.getElementsByClassName("slide")[0].clientWidth;
+                                        var ChuyenSlide = document.getElementsByClassName("chuyen-slide")[0];
+                                        var Img = ChuyenSlide.getElementsByTagName("img");
+                                        var Max = KichThuoc * Img.length;
+                                        Max -= KichThuoc;
+                                        var Chuyen = 0;
+                                        function Next() {
+                                            if (Chuyen < Max) Chuyen += KichThuoc;
+                                            else Chuyen = 0;
+                                            ChuyenSlide.style.marginLeft = '-' + Chuyen + 'px';
+                                        }
+    
+                                        function Back() {
+                                            if (Chuyen == 0) Chuyen = Max;
+                                            else Chuyen -= KichThuoc;
+                                            ChuyenSlide.style.marginLeft = '-' + Chuyen + 'px';
+                                        }
+                                    </script>
+                                </div>
+                            </div>  
+                        </div>
+    
+                    </div>
+                    <div class="col-12" >
+                        <div class="row">
+                            <div class="divcontainer">
+                                <div class="page-dau" > SẢN PHẨM MỚI</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="divcontainer1">
+    
+                                    <div class="khung-content">
+                                        <label class="label label-danger lable-moi">Mới</label>
+                                        <a href="chitietsp.html"> <img src="../images/ao4.jpg"
+                                                style="max-width:100%"></a>
+                                        <a href="" class="tenAcc">
+                                            AODEC x Pepsi t <br> Classic Blue Bowling Shir
+                                        </a>
+                                        
+                                        <h4>
+                                            <span class="dongia">
+    
+                                                700.000
+                                                <b>vnd</b>
+                                            </span>
+                                        </h4>
+                                       
+                                    </div>
+                                    <input type="button" id="chonmua" class="add" value="Chon mua">
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="divcontainer1">
+                                <div class="khung-content">
+                                    <label class="label label-danger lable-moi">Mới</label>
+                                    <a href="chitietsp2.html"> <img src="../images/ao5.jpg"
+                                            style="max-width:100%"></a>
+                                    <a href="#" class="tenAcc">
+                                        AO DEC <br> Pepsi Vintage 90's Shirt
+                                    </a>
+                                   
+                                    <h4> <span class="dongia">
+                                            799.000
+                                            <b>vnd</b>
+                                        </span>
+                                    </h4>
+                                   
+                                </div>
+                                <input type="button" id="chonmua" class="add" value="Chon mua">
+                            </div>
+    
+                        </div>
+                        <div class="col-4">
+                            <div class="divcontainer1">
+                                <div class="khung-content">
+                                    <label class="label label-danger lable-moi">Mới</label>
+                                   
+                                    <a href="../html/chitietsp3.html"><img src="../images/ao7.png" style="max-width:100%"></a>
+                                    <a href="" class="tenAcc">
+                                        AO DEC  <br> Reverse Shirt - Dark Blue <br>
+    
+                                    </a>
+                                   
+                                    <h4>
+                                        <span class="dongia">
+                                            645.000
+                                            <b>vnd</b>
+                                        </span>
+                                    </h4>
+                                   
+                                </div>
+                                <input type="button" id="chonmua" class="add" value="Chon mua">
+                            </div>
+                            
+                        </div>
+                        </div>
+                        </div>
+    
+    
+                    </div>
+                </div>
+            </section>
+           
+        </main>
+        <footer class="row">
+            <div class="col-12" style="background-color: darkgray;">
+                <div class="col-3" style="padding-left:140px;color: antiquewhite; ">
+                    <h3>THÔNG TIN LIÊN HỆ</h3>
+                    <a href="">
+                        <p style="font-size:14px;">TRỤ SỞ CHÍNH: 280 PHỐ HUẾ- TP. HÀ NỘI</p>
+                    </a>
+                    <a href="#">
+                        <p style="font-size:14px;">VĂN PHÒNG GIAO DỊCH: 444 XÃ ĐÀN - ĐỐNG ĐA - TP. HÀ NỘI</p>
+                    </a>
+                    <a href="#">
+                        <p style="font-size:14px;">PHONE:Gọi 091 115 72 27 </p>
+                    </a>
+                    <a href="#">
+                        <p style="font-size:14px;">HOT LINE : 094 242 1111</p>
+                    </a>
+                    <p style="font-size:14px;">Mọi thắc mắc và khiếu nại vui lòng liên hệ : DECAO@gmail.com </p>
+                    <p style="font-size:14px;">LIÊN HỆ MỞ ĐẠI LÝ : 0964 688 884</p>
+                </div>
+                <div class="col-2" style="padding-left: 40px;color: antiquewhite;">
+                    <h3 >CHÍNH SÁCH </h3>
+                    <p style="font-size:14px;">Thanh toán & Vận chuyển</p>
+                    <p style="font-size: 14px;"> Đổi/trả & Hoàn tiền</p>
+                    <p style="font-size: 14px;">Bảo mật & Chia sẻ thông tin</p>
+                 </div>
+                <div class="col-2" style="padding-left: 0px;color: antiquewhite;">
+                    <h3>DỊCH VỤ</h3>
+                    <p style="font-size:14px;">Mua hàng trực tuyến</p>
+                    <p style="font-size: 14px;">Đặt làm đồng phục</p>
+                    <p style="font-size:14px;">Hợp tác thương hiệu</p>
+                    <p style="font-size: 14px;">Thẻ/Voucher quà tặng</p>
+                </div>
+                <div class="col-5" style="color: antiquewhite;">
+                    <H3>
+                       MẠNG XÃ HỘI
+                    </H3>
+                    <p><b>Facebook:</b><a href="https://www.facebook.com/Decaoshop/" style="color:antiquewhite">https://www.facebook.com/Decaoshop/</a></p>
+                    <p><b>Instagram:</b><a href="https://www.instagram.com/aodec.official/" style="color:antiquewhite">https://www.instagram.com/aodec.official/</a></p>
+                    <p><b>Youtube:</b><a href="https://www.youtube.com/channel/UCaW8triXbACrcmfj3cUCZ9w" style="color:antiquewhite">https://www.youtube.com/channel/UCaW8triXbACrcmfj3cUCZ9w</a></p>
+                    
+                </div>
+                    
+            </div>
+        </footer>
+                   
+                     <script src="../scrip/doan.js"></script>
+       
+</body>
+</html>

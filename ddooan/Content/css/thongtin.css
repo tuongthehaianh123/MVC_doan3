@@ -1,0 +1,299 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	font-family: Arial, Helvetica, sans-serif;
+	display: block;
+}
+
+.header {
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+}
+
+.Menu {
+	width: 99%;
+	height: 61px;
+	background: #ffffff;
+	position: relative;
+	z-index: 1;
+	border-bottom: 3px double red;
+	/* position: sticky;
+	top:-10px; */
+}
+
+.left {
+	width: 32%;
+	height: 100%;
+	float: left;
+}
+
+a.logo img {
+	margin-left: 2%;
+	width: 10%;
+	float: left;
+	margin-top: 0;
+}
+
+/*----------------------------*/
+
+.right {
+	width: 40%;
+	height: 99%;
+	float: left;
+}
+
+.right>ul {
+	list-style: none;
+	height: 100%;
+}
+
+.right>ul>li {
+	width: 24%;
+	display: inline-block;
+	position: relative;
+	height: 98%;
+	border-radius: 10px;
+	background: transparent;
+	border: 1px solid white;
+}
+
+.right>ul>li:hover {
+	/* background-color: #636e72; */
+	border: 1px solid #2C3A47;
+	color: white;
+}
+
+.right>ul>li>a {
+	text-decoration: none;
+	color: black;
+	display: block;
+	font-size: 132%;
+	padding: 10px;
+	text-align: center;
+	font-family: segoe ui light;
+	font-weight: bold;
+}
+
+input[type="text"] {
+	margin-top: 1.5%;
+	width: 30%;
+	box-sizing: border-box;
+	border: 1px solid black;
+	border-radius: 4px;
+	outline: none;
+	padding: 12px 30px;
+	transition: 0.6s ease-in-out;
+}
+
+input[type="text"]:focus {
+	width: 100%;
+	background-color: #dfe6e9;
+	border-radius: 23px;
+}
+
+.r {
+	width: 8%;
+	height: 100%;
+	margin-left: 25px;
+	float: left;
+	margin-top: 0.5%;
+}
+
+/* -------Giới thiệu */
+
+.than {
+	position: relative;
+	width: 100%;
+	margin-top: 85px;
+}
+
+.allGT {
+	width: 81%;
+	height: 2140px;
+	margin: auto;
+	margin-top: -160px;
+	opacity: 0.9;
+	z-index: 1;
+	background-color: rgb(248, 241, 241);
+}
+
+.Gioithieu {
+	position: relative;
+	width: 80%;
+	height: 2150px;
+	margin-left: 10%;
+	margin-top: -2130px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: justify;
+	z-index: 2;
+}
+
+.a0 {
+	width: 98%;
+	margin-left: 1%;
+}
+
+.a1 {
+	width: 32%;
+	height: 460px;
+	margin-left: 1%;
+	float: left;
+	background-color: rgba(230, 217, 217, 0.3);
+	text-align: justify;
+}
+
+.a1:hover {
+	background: #30336b;
+	color: white;
+}
+
+.a2 {
+	width: 32%;
+	height: 300px;
+	margin-left: 1%;
+	margin-top: 10px;
+	float: left;
+	background-color: rgba(230, 217, 217, 0.3);
+	text-align: justify;
+}
+
+.a2:hover {
+	background: #30336b;
+	color: white;
+}
+
+.a3 {
+	width: 32%;
+	height: 340px;
+	margin-left: 1%;
+	margin-top: 10px;
+	float: left;
+	background-color: rgba(230, 217, 217, 0.3);
+	text-align: justify;
+}
+
+.a3:hover {
+	background: #30336b;
+	color: white;
+}
+
+.a4 {
+	width: 24%;
+	height: 355px;
+	margin-left: 0.80%;
+	margin-top: 10px;
+	float: left;
+	background-color: rgba(230, 217, 217, 0.3);
+	text-align: justify;
+}
+
+.a4:hover {
+	background: #30336b;
+	color: white;
+}
+
+.A5 {
+	position: relative;
+	margin-top: 35px;
+	width: 80%;
+	margin-left: 10%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.a5 {
+	width: 32%;
+	height: 130px;
+	margin-left: 1%;
+	margin-top: 10px;
+	float: left;
+	background-color: rgba(161, 159, 159, 0.774);
+}
+
+.a5:hover {
+	background: #30336b;
+	color: white;
+}
+
+.a51 {
+	width: 70%;
+	margin-left: 25%;
+	margin-top: -69px;
+}
+
+.h2a5 {
+	color: red;
+}
+
+.bot {
+	width: 100%;
+	height: 120px;
+	margin-top: 30px;
+	background-color: rgb(211, 189, 189);
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.botleft {
+	text-align: left;
+	width: 35%;
+	margin-left: 9%;
+	padding-top: 25px;
+	float: left;
+}
+
+.botright {
+	width: 47%;
+	text-align: right;
+	padding-top: 25px;
+	float: left;
+}
+
+/* div chi tiết */
+
+.meovat {
+	width: 40%;
+	height: 400px;
+	margin-left: 55%;
+}
+
+.mv1 {
+	width: 92%;
+	height: 170px;
+	padding-left: 7%;
+	padding-top: 15px;
+}
+
+.mv11 {
+	padding-left: 270px;
+	padding-top: 10px;
+	width: 560px;
+	text-align: justify;
+}
+
+.mv2 {
+	width: 92%;
+	height: 170px;
+	padding-left: 7%;
+	padding-top: 15px;
+}
+
+.mv22 {
+	padding-left: 270px;
+	padding-top: 10px;
+	width: 560px;
+	text-align: justify;
+}
+a{
+    text-decoration: none;
+    color: antiquewhite;
+    list-style: none;
+}
+

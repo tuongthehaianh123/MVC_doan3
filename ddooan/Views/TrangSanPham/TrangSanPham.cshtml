@@ -1,0 +1,333 @@
+﻿<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang sản phẩm</title>
+    <link rel="stylesheet" href="~/Content/css/sanpham.css">
+ 
+
+    <link rel="stylesheet" href="~/Content/css/chitietsp.css">
+    <link rel="stylesheet" href="~/Content/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="~/Content/scrip/jQuery v3.5.1.js"></script>
+
+</head>
+<body style="background-color: gray;">
+    <header id="head" class="row">
+        <div class="col-2">
+            <a href="#" style="text-align:center">
+                <img src="~/Content/images/anhlogodecao.jpg" style="max-width: 78%;padding: 0px;height: 131px;">
+            </a>
+        </div>
+        @Html.Partial("~/Views/Shared/TimKiemChung.cshtml")
+
+        @*<div class="col-6">
+
+
+
+                @using(Html.BeginForm("KQTimKiem", "TimKiem"))
+                {
+
+
+
+                    <input type="text" name="sTuKhoa" class="form-control" placeholder="Nhập tên sản phẩm cần tìm..." style="margin-left: -64px;width:788px;">
+                    <input type="submit" value="Tìm kiếm " />
+
+
+
+                }
+
+        </div>*@
+        <div class="col-4">
+            <div class="item-header">
+                @*chèn partial   view gio hang vào layout(tach icon gio hang sang 1 partial view mới)*@
+                @Html.Action("GioHangPartial1", "GioHang")
+            </div>
+            @Html.Partial("~/Views/Shared/_layoutopchung.cshtml")
+            @*<div class="item-header" style="padding-top: 45px;">
+                <button type="button" class="btn-default " style="margin:15px -316px">
+                    <a href="~/Content/html/dangnhap.html"> đăng nhập</a>
+                </button>
+            </div>
+            <div class="item-header" style="padding-top: 45px;">
+                <button type="button" class="btn-default " style="margin:15px -247px">
+                    <a href="~/Content/html/dangnhap.html">Đăng Ký</a>
+                </button>
+            </div>*@
+        </div>
+    </header>
+    <nav id="_nav" class="row">
+        <div class="menu">
+            <ul style="margin-top:-30;">
+                <li> <a href="@Url.Action("Index","Home")"> Trang chủ</a></li>
+                <li><a href="~/Content/html/Trangsanpham.html"> Sản phẩm</a></li>
+                <li><a href="~/Content/html/trangkhuyenmai.html">Sale</a></li>
+                <li> <a href="~/Content/html/tranggioithieu.html" target="_bank"> Giới thiệu</a></li>
+                <li><a href="~/Content/html/TrangLienhe.html"> Liên Hệ</a></li>[0]
+          
+
+
+
+
+
+
+            </ul>
+
+        </div>
+    </nav>
+    <div class="id" style="width:1200px;margin: auto; border: 1px solid red;">
+
+    </div>
+    <main>
+        <section class="row">
+            @RenderBody()
+            @*<div class="col-12">
+                    <div class="ALL">
+                        TẤT CẢ SẢN PHẨM DECAO
+                    </div>
+                    <div class="col-3">
+                        <div class="divcontainer1">
+
+                            <div class="khung-content">
+
+                                <a href="">
+                                    <img src="~/Content/images/ao8.jpg"
+                                         style="max-width:100%">
+                                </a>
+                                <a href="" class="tenAcc">
+                                    DEC AO <br>Open Eyes T-shirt (Midnight Edition)
+                                </a>
+
+                                <h4>
+                                    <span class="dongia">
+
+                                        540.000
+                                        <b>vnd</b>
+                                    </span>
+                                </h4>
+
+                            </div>
+                            <input type="button" id="chonmua" class="add" value="Chon mua">
+                        </div>
+
+                    </div>
+                    <div class="col-3">
+                        <div class="divcontainer1">
+                            <div class="khung-content">
+
+                                <a href="">
+                                    <img src="~/Content/images/ao9.png"
+                                         style="max-width:100%">
+                                </a>
+                                <a href="#" class="tenAcc">
+                                    DEC AO<BR> Santa Chilling Tee
+
+                                </a>
+
+                                <h4>
+                                    <span class="dongia">
+                                        649.000
+                                        <b>vnd</b>
+                                    </span>
+                                </h4>
+
+                            </div>
+                            <input type="button" id="chonmua" class="add" value="Chon mua">
+                        </div>
+
+                    </div>
+                    <div class="col-3">
+                        <div class="divcontainer1">
+                            <div class="khung-content">
+
+                                <img src="~/Content/images/ao10.jpg" style="max-width:100%;height: 317;">
+                                <a href="" class="tenAcc">
+                                    DEC AO<br> Leather Shedding Shirt
+
+                                </a>
+
+                                <h4>
+                                    <span class="dongia">
+                                        749.000
+                                        <b>vnd</b>
+                                    </span>
+                                </h4>
+
+                            </div>
+                            <input type="button" id="chonmua" class="add" value="Chon mua">
+                        </div>
+                    </div>
+                    <div class="col-3">
+
+                        <div class="divcontainer1">
+                            <div class="khung-content">
+
+                                <img src="~/Content/images/ao11.png"
+                                     style="max-width:100%"> <br>
+                                <a href="" class="tenAcc">
+                                    DEC AO<br> Open Eyes Shirt - Blue
+                                </a>
+
+                                <h4>
+                                    <span class="dongia">
+
+                                        849.000
+                                        <b>vnd</b>
+                                    </span>
+                                </h4>
+
+                            </div>
+                            <input type="button" id="chonmua" class="add" value="Chon mua">
+                        </div>
+
+                    </div>
+                    <div class="col-3">
+
+                        <div class="divcontainer1">
+                            <div class="khung-content">
+
+                                <img src="~/Content/images/ao12.jpg"
+                                     style="max-width:100%;height: 317px;"> <br>
+                                <a href="" class="tenAcc">
+                                    DEC AO<br> Santa Chilling TeeU
+                                </a>
+
+                                <h4>
+                                    <span class="dongia">
+
+                                        649.000
+                                        <b>vnd</b>
+                                    </span>
+                                </h4>
+
+                            </div>
+                            <input type="button" id="chonmua" class="add" value="Chon mua">
+                        </div>
+
+                    </div>
+                    <div class="col-3">
+
+                        <div class="divcontainer1">
+                            <div class="khung-content">
+
+                                <img src="~/Content/images/ao1.jpg"
+                                     style="max-width:100%"> <br>
+                                <a href="" class="tenAcc">
+                                    DEC AO<br> STAY ONTOP
+                                </a>
+
+                                <h4>
+                                    <span class="dongia">
+
+                                        649.000
+                                        <b>vnd</b>
+                                    </span>
+                                </h4>
+
+                            </div>
+                            <input type="button" id="chonmua" class="add" value="Chon mua">
+                        </div>
+
+                    </div>
+                    <div class="col-3">
+
+                        <div class="divcontainer1">
+                            <div class="khung-content">
+
+                                <img src="~/Content/images/ao3.jpg"
+                                     style="max-width:100%"> <br>
+                                <a href="" class="tenAcc">
+                                    AO DEC<br> Identity T-shirt - White
+                                </a>
+
+                                <h4>
+                                    <span class="dongia">
+
+                                        419.000
+                                        <b>vnd</b>
+                                    </span>
+                                </h4>
+
+                            </div>
+                            <input type="button" id="chonmua" class="add" value="Chon mua">
+                        </div>
+
+                    </div>
+                    <div class="col-3">
+
+                        <div class="divcontainer1">
+                            <div class="khung-content">
+
+                                <a href="~/Content/html/chitietsp.html">
+                                    <img src="~/Content/images/ao4.jpg"
+                                         style="max-width:100%"> <br>
+                                </a>
+                                <a href="" class="tenAcc">
+                                    AODEC <br> Pepsi Classic Blue Bowling Shirt
+                                </a>
+
+                                <h4>
+                                    <span class="dongia">
+
+                                        698.000
+                                        <b>vnd</b>
+                                    </span>
+                                </h4>
+
+                            </div>
+                            <input type="button" id="chonmua" class="add" value="Chon mua">
+                        </div>
+
+                    </div>
+                </div>*@
+        </section>
+
+    </main>
+    <footer class="row">
+        <div class="col-12" style="background-color: darkgray;">
+            <div class="col-3" style="padding-left:140px;color: antiquewhite; ">
+                <h3>THÔNG TIN LIÊN HỆ</h3>
+                <a href="">
+                    <p style="font-size:14px;">TRỤ SỞ CHÍNH: 280 PHỐ HUẾ- TP. HÀ NỘI</p>
+                </a>
+                <a href="#">
+                    <p style="font-size:14px;">VĂN PHÒNG GIAO DỊCH: 444 XÃ ĐÀN - ĐỐNG ĐA - TP. HÀ NỘI</p>
+                </a>
+                <a href="#">
+                    <p style="font-size:14px;">PHONE:Gọi 091 115 72 27 </p>
+                </a>
+                <a href="#">
+                    <p style="font-size:14px;">HOT LINE : 094 242 1111</p>
+                </a>
+                <p style="font-size:14px;">Mọi thắc mắc và khiếu nại vui lòng liên hệ : DECAO@gmail.com </p>
+                <p style="font-size:14px;">LIÊN HỆ MỞ ĐẠI LÝ : 0964 688 884</p>
+            </div>
+            <div class="col-2" style="padding-left: 40px;color: antiquewhite;">
+                <h3 style="">CHÍNH SÁCH </h3>
+                <p style="font-size:14px;">Thanh toán & Vận chuyển</p>
+                <p style="font-size: 14px;"> Đổi/trả & Hoàn tiền</p>
+                <p style="font-size: 14px;">Bảo mật & Chia sẻ thông tin</p>
+            </div>
+            <div class="col-2" style="padding-left: 0px;color: antiquewhite;">
+                <h3>DỊCH VỤ</h3>
+                <p style="font-size:14px;">Mua hàng trực tuyến</p>
+                <p style="font-size: 14px;">Đặt làm đồng phục</p>
+                <p style="font-size:14px;">Hợp tác thương hiệu</p>
+                <p style="font-size: 14px;">Thẻ/Voucher quà tặng</p>
+            </div>
+            <div class="col-5" style="color: antiquewhite;">
+                <H3>
+                    MẠNG XÃ HỘI
+                </H3>
+                <p><b>Facebook:</b><a href="https://www.facebook.com/Decaoshop/" style="color:antiquewhite">https://www.facebook.com/Decaoshop/</a></p>
+                <p><b>Instagram:</b><a href="https://www.instagram.com/aodec.official/" style="color:antiquewhite">https://www.instagram.com/aodec.official/</a></p>
+                <p><b>Youtube:</b><a href="https://www.youtube.com/channel/UCaW8triXbACrcmfj3cUCZ9w" style="color:antiquewhite">https://www.youtube.com/channel/UCaW8triXbACrcmfj3cUCZ9w</a></p>
+
+            </div>
+
+        </div>
+    </footer>
+    <script src="~/Content/scrip/doan.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+﻿@using ddooan.Models;
+@model IEnumerable<SanPham>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/TrangSanPham/TrangSanPham.cshtml";
+}
+
+@{
+    IEnumerable<SanPham> lstAoMoi = (IEnumerable<SanPham>)ViewBag.listAomoi;
+    IEnumerable<SanPham> lstQuanMoi = ViewBag.listQuanmoi as IEnumerable<SanPham>;
+    IEnumerable<SanPham> lstPhuKienMoi = (IEnumerable<SanPham>)ViewBag.listPhuKienMoi;
+
+
+}x
+@* bước 1 tách  code và lồng vào partialview*@
+@* bước 2 gán dữ liệu từ controller thông qua ViewBag  vào partialView*@
+
+<div class="col-12">
+    <div class="ALL">
+        TẤT CẢ SẢN PHẨM DECAO
+    </div>
+    @Html.Partial("~/Views/Sanpham/SanPhamStylelPartial1.cshtml", lstAoMoi)
+
+</div>
+<div class="col-12">
+    <div class="ALL">
+        TẤT CẢ SẢN PHẨM DECAO
+    </div>
+    @Html.Partial("~/Views/Sanpham/SanPhamStylelPartial1.cshtml", lstQuanMoi)
+
+</div>
+<div class="col-12">
+    <div class="ALL">
+        TẤT CẢ SẢN PHẨM DECAO
+    </div>
+    @Html.Partial("~/Views/Sanpham/SanPhamStylelPartial1.cshtml", lstPhuKienMoi)
+
+</div>
+
+
+
